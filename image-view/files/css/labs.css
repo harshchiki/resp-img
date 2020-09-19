@@ -3,19 +3,88 @@
  * Reference: http://meyerweb.com/eric/tools/css/reset/
  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +93,18 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,17 +113,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -57,15 +140,18 @@ a {
   text-decoration: none;
 }
 
-code, pre, samp {
-font-family: monospace;
+code,
+pre,
+samp {
+  font-family: monospace;
 }
 
 /**
  * BASIC TYPE
  */
 
-img, video {
+img,
+video {
   max-width: 100%;
   vertical-align: middle;
 }
@@ -74,8 +160,11 @@ p {
   margin: 0 0 1em;
 }
 
-h1, h2, h3, h4 {
-  margin: .5em 0 .75em;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.5em 0 0.75em;
   line-height: 1.3;
 }
 
@@ -130,7 +219,7 @@ html {
   margin-right: auto;
   padding-right: 1.5em;
   padding-left: 1.5em;
-  max-width: 1080px;
+  /* max-width: 1080px; */
 }
 
 /**
@@ -214,7 +303,7 @@ html {
 }
 
 .lab-theme-light body {
-  color: rgba(0, 0, 0, .75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .lab-theme-light .lab-nav,
@@ -239,19 +328,19 @@ html {
 }
 
 .lab-theme-light .lab-article-button {
-  color: rgba(0, 0, 0, .25);
-  border: 3px solid rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, 0.25);
+  border: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .lab-theme-light .lab-article-button:hover,
 .lab-theme-light .lab-article-button:active,
 .lab-theme-light .lab-article-button:focus {
-  color: rgba(0, 0, 0, .3);
-  border-color: rgba(0, 0, 0, .15);
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .lab-theme-dark body {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .lab-theme-dark .lab-nav,
@@ -276,21 +365,21 @@ html {
 }
 
 .lab-theme-dark .lab-article-button {
-  color: rgba(255, 255, 255, .25);
-  border: 3px solid rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.1);
 }
 
 .lab-theme-dark .lab-article-button:hover,
 .lab-theme-dark .lab-article-button:active,
 .lab-theme-dark .lab-article-button:focus {
-  color: rgba(255, 255, 255, .3);
-  border-color: rgba(255, 255, 255, .15);
+  color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .lab-follow,
 .lab-article-link,
 .lab-share a {
-  padding: 1.25em .75em;
+  padding: 1.25em 0.75em;
   display: inline-block;
   vertical-align: bottom;
   text-decoration: none;
@@ -391,11 +480,11 @@ html {
 .labs-pagination span,
 .labs-pagination a {
   vertical-align: middle;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 .labs-pagination span a {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 
 /**
@@ -461,7 +550,7 @@ html {
 @media only screen and (min-width: 768px) {
   .lab-grid {
     margin-left: -1.5em;
-    width: calc( 100% + 1.5em );
+    width: calc(100% + 1.5em);
   }
 
   .lab-grid-cell {

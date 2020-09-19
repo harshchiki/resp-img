@@ -45,7 +45,11 @@ var getHTML = function(json, parentFolder) {
     if (item.detail_english) {
       imageHTML += "<p class='card-text'>" + item.detail_english + "</p>";
     }
-    imageHTML += "<a href='#' class='btn btn-primary' >Download</a>";
+    imageHTML +=
+      "<a download href='" +
+      parentFolder +
+      item.original +
+      "' class='btn btn-primary'>Download</a>";
     imageHTML += "</div>";
     imageHTML += "</div>";
   });
