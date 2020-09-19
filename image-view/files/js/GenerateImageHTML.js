@@ -40,7 +40,12 @@ var getHTML = function(json, parentFolder) {
     imageHTML += "/>";
     imageHTML += "<div class='card-body'>";
     if (item.title_english) {
-      imageHTML += "<h5 class='card-title'>" + item.title_english + "</h5>";
+      imageHTML +=
+        "<h5 class='card-title'>" +
+        item.title_english +
+        " " +
+        item.original +
+        "</h5>";
     }
 
     if (item.detail_english) {
