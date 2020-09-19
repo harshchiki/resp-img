@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US" class="has-lab-nav-bottom lab-theme-light">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="files/js/SM.js"></script>
+    <script src="files/js/RM.js"></script>
+    <script src="files/js/HM.js"></script>
+    <script src="files/js/MS.js"></script>
+    <script src="files/js/BS.js"></script>
+    <script src="files/js/BM.js"></script>
+    <script src="files/js/BS.js"></script>
+    <script src="files/js/GG.js"></script>
+    <script src="files/js/GenerateImageHTML.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radhasoami - Image Gallery</title>
+    <link rel="stylesheet" href="files/css/labs.css" />
+    <link rel="stylesheet" href="files/css/masonry.css" />
+    <link rel="stylesheet" href="files/css/modaloverlay.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body
+    class="labs-template-default single single-labs postid-2409 logged-in admin-bar no-customize-support"
+  >
+    <div class="container">
+      <div role="navigation" class="row container-fluid" id="pageBanner" style="overflow:hidden; top:0;">
+        <img src="files/images/header.png" class="img-responsive HeaderDiv" />
+        <br />
+        <button id="SM" class="btn btn-light" text="Soamiji Maharaj">Soamiji Maharaj</button>
+        <button id="RM" class="btn btn-light" text="Radhaji Maharaj">Radhaji Maharaj</button>
+        <button id="HM" class="btn btn-light" text="Huzur Maharaj">Huzur Maharaj</button>
+        <button id="MS" class="btn btn-light" text="Maharaj Saheb">Maharaj Saheb</button>
+        <button id="BS" class="btn btn-light" text="Buaji Saheba">Buaji Saheba</button>
+        <button id="BM" class="btn btn-light" text="Babuji Maharaj">Babuji Maharaj</button>
+        <button id="GG" class="btn btn-light" text="Guru Gurumukh">Guru & Gurumukh</button>
+        <br />
+      </div>
+      <br />
+      <!-- .lab-nav -->
+      <div class="wrapper">
+        
+       
+
+
+        <!-- .intro -->
+        <div id="cardViewContainer" class="masonry bordered">  
+        <!-- .masonry -->
+
+        </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+        
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01">
+        
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        setTimeout(() => {
+          $(".wrapper").css("position", "fixed");
+          var marginTop = $("#pageBanner").height() + 25;
+          $(".wrapper").css("top", marginTop + "px");
+          var height = $(window).height() - marginTop;
+          $(".wrapper").height(height + "px");
+          $(".wrapper").css("overflow", "auto");
+        }, 2000);
+        
+        
+        
+
+        // click handlers
+        $("button").click(function(e){
+          var MaharajSelected = $(e.target).attr("text");
+          console.log("Clicked: " + MaharajSelected);
+          var html = getCardViewHTML(MaharajSelected);
+          $("#cardViewContainer").html(html);
+        });
+
+        // landing
+        $("#cardViewContainer").html(getCardViewHTML("Soamiji Maharaj"));
+
+      });
+
+      
+    </script>
+  </body>
+</html>
