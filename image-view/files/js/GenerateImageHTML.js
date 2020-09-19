@@ -43,8 +43,8 @@ var getHTML = function(json, parentFolder) {
       imageHTML +=
         "<h5 class='card-title'>" +
         item.title_english +
-        " " +
-        item.original +
+        // " " +
+        // item.original +
         "</h5>";
     }
 
