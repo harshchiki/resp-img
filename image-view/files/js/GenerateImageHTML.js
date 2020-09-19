@@ -36,6 +36,7 @@ var getHTML = function(json, parentFolder) {
       "src='" + parentFolder + item.original + ".rendition.640.480.png" + "' ";
     imageHTML += "alt='" + item.detail_english + "' ";
     imageHTML += "title='" + item.title_english + "' ";
+    imageHTML += "original='" + parentFolder + item.original + "' ";
     imageHTML += "/>";
     imageHTML += "<div class='card-body'>";
     if (item.title_english) {
