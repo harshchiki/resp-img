@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="files/css/labs.css" />
     <link rel="stylesheet" href="files/css/masonry.css" />
     <link rel="stylesheet" href="files/css/modaloverlay.css" />
+    <link rel="stylesheet" href="files/css/select.css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   </head>
@@ -64,6 +65,7 @@
 
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
           <div class="overlay-content">
             
           </div>
@@ -120,7 +122,8 @@
       var attachePhotoClickHandler = function() {
         $("img").click(function (e) {
           var originalPath = $(e.target).attr("original");
-          var imgTag = "<img src='" + originalPath + ".rendition.800.600.png" + "'/>";
+          var rendition = ".rendition.800.600.png";
+          var imgTag = "<img src='" + originalPath + rendition + "'/>";
           $(".overlay-content").html(imgTag);
           openNav();
         });
