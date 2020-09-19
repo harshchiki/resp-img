@@ -31,7 +31,7 @@ var getHTML = function(json, parentFolder) {
   var imageHTML = "";
   json.forEach(item => {
     imageHTML += "<div class='brick'>";
-    imageHTML += "<img ";
+    imageHTML += "<img style='cursor:pointer;' ";
     imageHTML +=
       "src='" + parentFolder + item.original + ".rendition.640.480.png" + "' ";
     imageHTML += "alt='" + item.detail_english + "' ";
@@ -46,11 +46,11 @@ var getHTML = function(json, parentFolder) {
     if (item.detail_english) {
       imageHTML += "<p class='card-text'>" + item.detail_english + "</p>";
     }
-    imageHTML +=
-      "<a download href='" +
-      parentFolder +
-      item.original +
-      "' class='btn btn-primary'>Download</a>";
+    // imageHTML +=
+    //   "<a download href='" +
+    //   parentFolder +
+    //   item.original +
+    //   "' target='_blank' class='btn btn-primary'>View in new tab</a>";
     imageHTML += "</div>";
     imageHTML += "</div>";
   });
