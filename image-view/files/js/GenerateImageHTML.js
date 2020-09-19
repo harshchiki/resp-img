@@ -33,7 +33,7 @@ var getHTML = function(json, parentFolder) {
     imageHTML += "<div class='brick'>";
     imageHTML += "<img ";
     imageHTML +=
-      "src='" + parentFolder + item.original + ".rendition.319.319.png" + "' ";
+      "src='" + parentFolder + item.original + ".rendition.640.480.png" + "' ";
     imageHTML += "alt='" + item.detail_english + "' ";
     imageHTML += "title='" + item.title_english + "' ";
     imageHTML += "/>";
