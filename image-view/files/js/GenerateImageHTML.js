@@ -1,7 +1,11 @@
 var getCardViewHTML = function(Maharaj) {
   switch (Maharaj) {
     case "Soamiji Maharaj":
-      return getHTML(SoamijiMaharajPhotos, "files/images/SoamijiMaharaj/");
+      return (
+        "Soamiji Maharaj" +
+        "<br />" +
+        getHTML(SoamijiMaharajPhotos, "files/images/SoamijiMaharaj/")
+      );
       break;
     case "Radhaji Maharaj":
       return getHTML(RadhajiMaharajPhotos, "files/images/RadhajiMaharaj/");
@@ -31,9 +35,23 @@ var getHTML = function(json, parentFolder) {
   var imageHTML = "";
   json.forEach(item => {
     imageHTML += "<div class='brick'>";
-    imageHTML += "<img style='cursor:pointer;' ";
-    imageHTML +=
-      "src='" + parentFolder + item.original + ".rendition.640.480.png" + "' ";
+    imageHTML += "<img photogallery style='cursor:pointer;' ";
+    if ($(window).width() < 700) {
+      imageHTML +=
+        "src='" +
+        parentFolder +
+        item.original +
+        ".rendition.319.319.png" +
+        "' ";
+    } else {
+      imageHTML +=
+        "src='" +
+        parentFolder +
+        item.original +
+        ".rendition.640.480.png" +
+        "' ";
+    }
+
     imageHTML += "alt='" + item.detail_english + "' ";
     imageHTML += "title='" + item.title_english + "' ";
     imageHTML += "original='" + parentFolder + item.original + "' ";
