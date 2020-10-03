@@ -87,25 +87,25 @@
                                     Gallery&nbsp;&nbsp;<span class="caret"></span></a>
                                 <ul id="#media" style="z-index:999;" class="dropdown-menu">
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Soamiji Maharaj'); $('#cardViewContainer').html(getCardViewHTML('Soamiji Maharaj'));"
+                                            onclick="$('h1[photogallery][title]').html('Soamiji Maharaj (स्वामीजी महाराज)'); $('#cardViewContainer').html(getCardViewHTML('Soamiji Maharaj'));"
                                             style="cursor: pointer">Soamiji Maharaj</a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Radhaji Maharaj'); $('#cardViewContainer').html(getCardViewHTML('Radhaji Maharaj'));"
+                                            onclick="$('h1[photogallery][title]').html('Radhaji Maharaj (राधाजी महाराज)'); $('#cardViewContainer').html(getCardViewHTML('Radhaji Maharaj'));"
                                             style="cursor: pointer">Radhaji Maharaj</a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Huzur Maharaj'); $('#cardViewContainer').html(getCardViewHTML('Huzur Maharaj'));"
+                                            onclick="$('h1[photogallery][title]').html('Huzur Maharaj (हुजूर महाराज)'); $('#cardViewContainer').html(getCardViewHTML('Huzur Maharaj'));"
                                             style="cursor: pointer">Huzur Maharaj </a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Maharaj Saheb'); $('#cardViewContainer').html(getCardViewHTML('Maharaj Saheb'));"
+                                            onclick="$('h1[photogallery][title]').html('Maharaj Saheb (महाराज साहेब)'); $('#cardViewContainer').html(getCardViewHTML('Maharaj Saheb'));"
                                             style="cursor: pointer">Maharaj Saheb</a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Buaji Saheb'); $('#cardViewContainer').html(getCardViewHTML('Buaji Saheba'));"
+                                            onclick="$('h1[photogallery][title]').html('Buaji Saheba (बुआजी साहिबा)'); $('#cardViewContainer').html(getCardViewHTML('Buaji Saheba'));"
                                             style="cursor: pointer">Buaji Saheba</a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Babuji Maharaj'); $('#cardViewContainer').html(getCardViewHTML('Babuji Maharaj'));"
+                                            onclick="$('h1[photogallery][title]').html('Babuji Maharaj (बाबूजी महाराज)'); $('#cardViewContainer').html(getCardViewHTML('Babuji Maharaj'));"
                                             style="cursor: pointer">Babuji Maharaj</a></li>
                                     <li><a targetDiv="PhotoGallery"
-                                            onclick="$('h1[photogallery][title]').html('Guru & Gurumukh'); $('#cardViewContainer').html(getCardViewHTML('Guru Gurumukh'));"
+                                            onclick="$('h1[photogallery][title]').html('Guru & Gurumukh (गुरु व गुरुमुख)'); $('#cardViewContainer').html(getCardViewHTML('Guru Gurumukh'));"
                                             style="cursor: pointer">Guru & Gurumukh</a></li>
                                 </ul>
                             </li>

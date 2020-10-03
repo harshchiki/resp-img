@@ -6,7 +6,7 @@ body {
 
 a {
   color: #5b7083;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /* The title */
@@ -30,13 +30,13 @@ a {
 
 /* Intro section */
 .intro {
-  margin: 1.75em 0 .75em;
+  margin: 1.75em 0 0.75em;
   border-bottom: 3px double rgba(0, 0, 0, 0.05);
   margin-bottom: 1.75em;
 }
 
 .intro a {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .intro a:hover {
@@ -44,11 +44,11 @@ a {
 }
 
 .intro h3 {
-  font-size: .825em;
+  font-size: 0.825em;
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
-  margin: .25em .75em .75em;
+  margin: 0.25em 0.75em 0.75em;
 }
 
 .intro h3 a {
@@ -57,7 +57,7 @@ a {
 
 /* Masonry grid */
 .masonry {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   column-gap: 30px;
   column-fill: initial;
 }
@@ -71,12 +71,12 @@ a {
 
 /* Masonry image effects */
 .masonry .brick img {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   backface-visibility: hidden; /* Remove Image flickering on hover */
 }
 
 .masonry .brick:hover img {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 /* Bordered masonry */
