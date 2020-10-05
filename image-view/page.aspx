@@ -2886,7 +2886,7 @@
             </div>
         </div>
 
-        <div id="PhotoGallery" class="row" divType"pageContent">
+        <div id="PhotoGallery" class="row" divType="pageContent">
             <br /><br />
             <div class="wrapper">
 
