@@ -118,7 +118,6 @@
         // click handlers
         $("button").click(function(e){
           var MaharajSelected = $(e.target).attr("text");
-          console.log("Clicked: " + MaharajSelected);
           var html = getCardViewHTML(MaharajSelected);
           $("#cardViewContainer").html(html);
           attachePhotoClickHandler();
