@@ -1,11 +1,7 @@
 var getCardViewHTML = function(Maharaj) {
   switch (Maharaj) {
     case "Soamiji Maharaj":
-      return (
-        "Soamiji Maharaj" +
-        "<br />" +
-        getHTML(SoamijiMaharajPhotos, "files/images/SoamijiMaharaj/")
-      );
+      return getHTML(SoamijiMaharajPhotos, "files/images/SoamijiMaharaj/");
       break;
     case "Radhaji Maharaj":
       return getHTML(RadhajiMaharajPhotos, "files/images/RadhajiMaharaj/");
@@ -34,7 +30,7 @@ var getHTML = function(json, parentFolder) {
 
   var imageHTML = "";
   json.forEach(item => {
-    imageHTML += "<div class='brick'>";
+    imageHTML += "<div class='brick' align='center'>";
     imageHTML += "<img photogallery style='cursor:pointer;' ";
     if ($(window).width() < 700) {
       imageHTML +=
@@ -57,7 +53,7 @@ var getHTML = function(json, parentFolder) {
     imageHTML += "title='" + item.title_english + "' ";
     imageHTML += "original='" + parentFolder + item.original + "' ";
     imageHTML += "/>";
-    imageHTML += "<div class='card-body'>";
+    imageHTML += "<div class='card-body' style='padding-top:6px;'>";
     if (item.title_english) {
       imageHTML +=
         "<h5 class='card-title'>" +
@@ -68,7 +64,7 @@ var getHTML = function(json, parentFolder) {
     }
 
     if (item.detail_english) {
-      imageHTML += "<p class='card-text'>" + item.detail_english + "</p>";
+      imageHTML += "<p style='font-size:16px;' class='card-text'>" + item.detail_english + "</p>";
     }
     // imageHTML +=
     //   "<a download href='" +

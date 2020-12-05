@@ -1,7 +1,7 @@
 var SoamijiMaharajPhotos = [
   {
     original: "IMG_SM_111826.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "Says Radhasoami this is to you<br>Come along to Satlok I invite you.",
@@ -9,7 +9,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111836.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "The current of the ocean of existence is formidable<br>But it matters little, when the boatman is the<br>Perfect Guru. He has provided the boat of Shabd.<br>Some courageous and bold Jiva will board it.",
@@ -17,7 +17,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111841.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "The three Yugas (Sat Yuga, Treta and Dwapar)<br>have passed. My beloved Radhasoami has<br>made His advent in this fourth Yuga (Kali Yug).",
@@ -25,7 +25,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111903.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "I am mindful of your welfare. You need not<br>worry. You only engender love in your heart.",
@@ -33,7 +33,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111920.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "Without Sat Guru you cannot attain the goal.<br>Hence take His shelter heart and soul.",
@@ -41,7 +41,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111858.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "RADHASOAMI is the Ocean profoundly serene<br>No one can fathom howsoever branve and keen.",
@@ -49,7 +49,7 @@ var SoamijiMaharajPhotos = [
   },
   {
     original: "IMG_SM_111915.jpg",
-    title_english: "Soami Maharaj (1818-1878)",
+    title_english: "",
     title_hindi: "",
     detail_english:
       "My beloved Radhasoami has incarnated here as<br>Sant. The Supreme Creator has made His advent to<br>this world. He is my beloved Radhasoami.",
