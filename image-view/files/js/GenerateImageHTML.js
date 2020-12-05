@@ -44,11 +44,12 @@ var getHTML = function(json, parentFolder) {
         ".rendition.319.319.png" +
         "' ";
     } else {
+      // TODO: check if a better rendition can be used (in terms of size)
       imageHTML +=
         "src='" +
         parentFolder +
         item.original +
-        ".rendition.640.480.png" +
+        ".rendition.319.319.png" +
         "' ";
     }
 
