@@ -1,4 +1,4 @@
-select.ssgPhotoSelector {
+.ssgPhotoSelector {
   width: 100%;
   /*height: 50px;*/
   font-size: 100%;
@@ -7,7 +7,6 @@ select.ssgPhotoSelector {
   border-radius: 0;
   border: none;
   border-bottom: 2px solid #959292;
-
   appearance: none;
   padding: 10px;
   padding-right: 38px;

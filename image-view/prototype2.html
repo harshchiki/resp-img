@@ -17,6 +17,7 @@
     <script src="files/js/GG.js"></script>
     <script src="files/js/GenerateImageHTML.js"></script>
 
+    <link rel="stylesheet" href="files/css/bootstrap.min.css" />
     <link rel="stylesheet" href="files/css/masonry.css" />
     <link rel="stylesheet" href="files/css/modaloverlay.css" />
     <link rel="stylesheet" href="files/css/select.css" />
@@ -26,9 +27,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -50,7 +48,7 @@
                     </td>
                     <td>
                 <select class="ssgPhotoSelector">
-                  <option value="Soamiji Maharaj" id="SM" text="Soamiji Maharaj">Soamiji Maharaj</option>
+                  <option value="Soamiji Maharaj" id="SM" text="Soamiji Maharaj" selected>Soamiji Maharaj</option>
                   <option value="Radhaji Maharaj" id="RM" text="Radhaji Maharaj">Radhaji Maharaj</option>
                   <option value="Huzur Maharaj" id="HM" text="Huzur Maharaj">Huzur Maharaj</option>
                   <option value="Maharaj Saheb" id="MS" text="Maharaj Saheb">Maharaj Saheb</option>
@@ -66,13 +64,6 @@
       
         </div>
       <br />
-
-
-
-
-      
-
-
       <!-- .lab-nav -->
       <div class="wrapper">
         
@@ -92,62 +83,5 @@
           </div>
         </div>
 
-
-    <script type="text/javascript">
-    function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-
-
-      $(document).ready(function() {
-
-        setTimeout(() => {
-          $(".wrapper").css("position", "fixed");
-          var marginTop = $("#pageBanner").height() + 25;
-          $(".wrapper").css("top", marginTop + "px");
-          var height = $(window).height() - marginTop;
-          $(".wrapper").height(height + "px");
-          $(".wrapper").css("overflow", "auto");
-
-          $("#cardViewContainer").width($("#pageBanner").width());
-        }, 5);
-
-        $("select.ssgPhotoSelector").change(function(e) {
-          var MaharajSelected = this.value;
-          var html = getCardViewHTML(MaharajSelected);
-          $("#cardViewContainer").html(html);
-          attachePhotoClickHandler();
-        });
-
-        // landing
-        $("#cardViewContainer").html(getCardViewHTML("Soamiji Maharaj"));
-
-        attachePhotoClickHandler();
-
-        $(document).keyup(function (e) {
-          e = e || window.event;
-          if (e.keyCode == 27) {
-            closeNav();
-          }
-        });
-
-      });
-
-      var attachePhotoClickHandler = function() {
-        $("img").click(function (e) {
-          var originalPath = $(e.target).attr("original");
-          var rendition = ".rendition.800.600.png";
-          var imgTag = "<img src='" + originalPath + rendition + "'/>";
-          $(".overlay-content").html(imgTag);
-          openNav();
-        });
-      };
-
-      
-    </script>
   </body>
 </html>

@@ -80,3 +80,56 @@ var getHTML = function(json, parentFolder) {
   });
   return imageHTML;
 };
+
+function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+
+      $(document).ready(function() {
+
+        setTimeout(() => {
+          $(".wrapper").css("position", "fixed");
+          var marginTop = $("#pageBanner").height() + 25;
+          $(".wrapper").css("top", marginTop + "px");
+          var height = $(window).height() - marginTop;
+          $(".wrapper").height(height + "px");
+          $(".wrapper").css("overflow", "auto");
+
+          $("#cardViewContainer").width($("#pageBanner").width());
+        }, 5);
+
+        $("select.ssgPhotoSelector").change(function(e) {
+          var MaharajSelected = this.value;
+          var html = getCardViewHTML(MaharajSelected);
+          $("#cardViewContainer").html(html);
+          attachePhotoClickHandler();
+        });
+
+        // landing
+        $("#cardViewContainer").html(getCardViewHTML("Soamiji Maharaj"));
+
+        attachePhotoClickHandler();
+
+        $(document).keyup(function (e) {
+          e = e || window.event;
+          if (e.keyCode == 27) {
+            closeNav();
+          }
+        });
+
+      });
+
+      var attachePhotoClickHandler = function() {
+        $("img").click(function (e) {
+          var originalPath = $(e.target).attr("original");
+          var rendition = ".rendition.800.600.png";
+          var imgTag = "<img src='" + originalPath + rendition + "'/>";
+          $(".overlay-content").html(imgTag);
+          openNav();
+        });
+      };
